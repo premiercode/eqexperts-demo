@@ -54,6 +54,8 @@ address { font-style: normal; }
 
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
 .contact :focus-visible, .footer :focus-visible { outline-color: var(--kraft-light); }
+.fieldform :focus-visible { outline-color: var(--denim); }
+html:not(.js) .footage { display: none; }
 main:focus { outline: none; }
 
 .wrap { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
@@ -82,7 +84,7 @@ main:focus { outline: none; }
   margin: 0; text-align: center;
   font-family: var(--serif-display);
   font-weight: 700;
-  font-size: clamp(2.5rem, 1.2rem + 7.4vw, 7.25rem);
+  font-size: clamp(2rem, 0.9rem + 5.6vw, 5.25rem);
   line-height: 1; letter-spacing: -.025em;
   padding: clamp(10px, 1.6vw, 22px) 0 clamp(8px, 1.2vw, 16px);
   font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;

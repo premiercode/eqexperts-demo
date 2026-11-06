@@ -221,6 +221,14 @@
   .header-call:hover { background: var(--bone); color: var(--ink); }
   .header-call:focus-visible { clip-path: none; }
 
+  /* Phones and zoomed views: nav wraps to a second row instead of disappearing */
+  @media (max-width: 899px) {
+    .site-header { position: relative; }
+    .site-header__inner { flex-wrap: wrap; }
+    .site-nav { display: block; order: 3; flex-basis: 100%; margin-left: 0; }
+    .site-nav ul { flex-wrap: wrap; gap: 0 0.9rem; }
+    .site-nav a { font-size: 0.74rem; letter-spacing: 0.08em; padding-block: 0.6rem; }
+  }
   @media (min-width: 900px) {
     .site-nav { display: block; }
     .header-call { margin-left: clamp(1rem, 2vw, 2.5rem); }
@@ -1156,7 +1164,7 @@
         animation-range: exit 10% exit 80%;
       }
       @keyframes hero-exit {
-        to { opacity: 0.15; transform: translateY(-8vh); }
+        to { opacity: 0.6; transform: translateY(-8vh); }
       }
 
       .band__media {

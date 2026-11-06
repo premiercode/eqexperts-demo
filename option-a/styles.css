@@ -154,7 +154,7 @@ figure { margin: 0; }
 }
 
 /* Dark surfaces get a light focus ring */
-.site-header, .hero, .trust, .ironmarket, .site-footer, .call-plate, .footage-dialog, .preview-bar {
+.site-header, .hero, .trust, .ironmarket, .site-footer, .footage-dialog, .preview-bar {
     --focus: var(--orange-soft);
 }
 
@@ -415,7 +415,7 @@ figure { margin: 0; }
     color: var(--white);
     line-height: 1.06;
 }
-.h1-accent { color: var(--steel-300); display: block; }
+.h1-accent { display: block; }
 
 .hero-lead {
     margin-top: var(--space-6);
@@ -1028,14 +1028,14 @@ figure { margin: 0; }
     font-size: 1rem;
     color: var(--ink);
     background: var(--white);
-    border: 1.5px solid var(--steel-500);
+    border: 1.5px solid var(--steel-600);
     border-radius: var(--radius-sm);
     padding: 0.7rem 0.85rem;
     min-height: 48px;
     transition: border-color var(--t-fast), box-shadow var(--t-fast);
 }
 .field textarea { resize: vertical; min-height: 7.5rem; }
-.field input:hover, .field textarea:hover { border-color: var(--steel-700); }
+.field input:hover, .field textarea:hover { border-color: var(--charcoal-800, #1c1f23); }
 .field input:focus-visible,
 .field textarea:focus-visible {
     outline: none;
@@ -1186,8 +1186,8 @@ figure { margin: 0; }
 
 /* ---------- Very wide screens ---------- */
 @media (min-width: 2200px) {
-    :root { --section-pad: 8rem; }
-    .container { max-width: 1400px; }
+    :root { --section-pad: 8rem; font-size: 118.75%; }
+    .container { max-width: 1720px; }
     .hero-grid { min-height: min(calc(100svh - 130px), 960px); }
     .hero-video { max-height: 760px; }
 }

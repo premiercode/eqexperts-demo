@@ -65,13 +65,13 @@
 
       <figure class="hero__plate">
         <img
-          src="../assets/img/prairie-storm-1200.webp"
-          srcset="../assets/img/prairie-storm-640.webp 640w, ../assets/img/prairie-storm-1200.webp 1200w, ../assets/img/prairie-storm-2400.webp 2400w"
+          src="../assets/img/excavator-line-1200.webp"
+          srcset="../assets/img/excavator-line-640.webp 640w, ../assets/img/excavator-line-1200.webp 1200w, ../assets/img/excavator-line-2400.webp 2400w"
           sizes="(min-width: 1600px) 860px, (min-width: 960px) 54vw, 100vw"
-          width="1200" height="800"
-          alt="Storm clouds rolling over a wide golden prairie"
+          width="1200" height="574"
+          alt="A long line of yellow excavators parked on grass under a summer sky"
           fetchpriority="high">
-        <figcaption class="mono">Plate I. Weather moving over open prairie.</figcaption>
+        <figcaption class="mono">Plate I. From the client&rsquo;s own files: excavators lined up on grass.</figcaption>
       </figure>
 
       <aside class="ticket" aria-labelledby="ticket-title">
@@ -133,12 +133,12 @@
         </div>
         <figure class="service__fig service__fig--wide">
           <img
-            src="../assets/img/excavator-line-1200.webp"
-            srcset="../assets/img/excavator-line-640.webp 640w, ../assets/img/excavator-line-1200.webp 1200w, ../assets/img/excavator-line-2400.webp 2400w"
+            src="../assets/img/track-loader-1200.webp"
+            srcset="../assets/img/track-loader-640.webp 640w, ../assets/img/track-loader-1200.webp 1200w"
             sizes="(min-width: 960px) 44vw, 100vw"
-            width="1200" height="574" loading="lazy"
-            alt="A long line of yellow excavators parked on grass">
-          <figcaption class="mono">From the client&rsquo;s own files: a line of excavators on grass.</figcaption>
+            width="1200" height="800" loading="lazy"
+            alt="A weathered yellow track loader parked on open scrubland">
+          <figcaption class="mono">Iron on open range, under a big sky.</figcaption>
         </figure>
       </article>
 
@@ -290,7 +290,8 @@
             <h3 class="mono">Request an appraisal</h3>
             <span class="sample-tag sample-tag--light">Sample form</span>
           </div>
-          <form id="request-form" action="#" method="post" novalidate>
+          <form id="request-form" action="#" method="post" novalidate aria-describedby="form-req">
+            <p id="form-req" class="mono small">All fields are required.</p>
             <!-- PLACEHOLDER: reCAPTCHA v3 script and token field go here at launch -->
             <div class="field">
               <label for="f-name"><span class="mono field__no">Line 1</span> Name</label>
