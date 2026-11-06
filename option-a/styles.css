@@ -208,7 +208,11 @@ figure { margin: 0; }
     color: var(--white);
     text-decoration: none;
     line-height: 1.1;
+    flex: 1 1 0;
+    min-width: 0;
 }
+.header-call { flex: none; }
+@media (min-width: 960px) { .brand { flex: 0 1 auto; } }
 .brand:hover { color: var(--white); }
 
 .brand-name {
@@ -229,7 +233,9 @@ figure { margin: 0; }
     margin-top: 0.3rem;
 }
 
-.site-nav { display: none; }
+/* Below 960px the nav wraps to a second row instead of disappearing */
+.header-inner { flex-wrap: wrap; }
+.site-nav { display: block; order: 3; flex-basis: 100%; }
 
 .site-nav ul {
     display: flex;
@@ -274,8 +280,13 @@ figure { margin: 0; }
     .header-call { padding: 0.6rem 1.1rem; }
 }
 
+@media (max-width: 959px) {
+    .site-nav ul { flex-wrap: wrap; gap: 0 1rem; }
+    .site-nav a { display: inline-block; font-size: 0.78rem; }
+}
 @media (min-width: 960px) {
-    .site-nav { display: block; }
+    .header-inner { flex-wrap: nowrap; }
+    .site-nav { order: 0; flex-basis: auto; }
 }
 
 /* Diamond band under header (and over footer) */
