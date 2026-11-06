@@ -366,6 +366,20 @@
 </svg>
 
 <script src="main.js" defer></script>
-<!-- SWITCHER -->
+
+<!-- REMOVE AT LAUNCH: option switcher -->
+<style class="pv-style">
+html{scroll-padding-bottom:80px}
+.pv-switch .pv-link:focus-visible{outline:3px solid #1a5fd0;outline-offset:2px}
+.pv-switch .pv-link:not([aria-current]):hover{background:#e8e8e8!important}
+@media (max-width:600px){.pv-switch .pv-link{min-height:44px!important}}
+@media print{.pv-switch{display:none!important}}
+</style>
+<nav class="pv-switch" aria-label="Design options" style="position:fixed;left:8px;bottom:8px;z-index:9999;display:flex;gap:4px;padding:4px;background:#fff;border:1px solid #c8c8c8;border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.18);font:13px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#111;margin:0">
+<a class="pv-link" href="../option-a/" aria-current="page" style="display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 12px;border-radius:6px;font:600 13px/1 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;letter-spacing:0;white-space:nowrap;background:#111;color:#fff;">Option A</a>
+<a class="pv-link" href="../option-b/" style="display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 12px;border-radius:6px;font:600 13px/1 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;letter-spacing:0;white-space:nowrap;background:transparent;color:#111;">Option B</a>
+<a class="pv-link" href="../option-c/" style="display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 12px;border-radius:6px;font:600 13px/1 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;letter-spacing:0;white-space:nowrap;background:transparent;color:#111;">Option C</a>
+</nav>
+<!-- /REMOVE AT LAUNCH -->
 </body>
 </html>
